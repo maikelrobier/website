@@ -1,0 +1,14 @@
+{
+  "name": "maikelrobier-website",
+  "version": "0.1.0",
+  "description": "Maikel Ruiz's personal website",
+  "main": "index.js",
+  "author": "maikelrobier <maikelrobier@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "lint:html": "$(yarn bin)/htmlhint"
+  },
+  "dependencies": {
+    "htmlhint": "^0.9.13"
+  }
+}
