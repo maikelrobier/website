@@ -6,9 +6,14 @@
   "author": "maikelrobier <maikelrobier@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "lint:html": "$(yarn bin)/htmlhint"
+    "lint:html": "$(yarn bin)/htmlhint",
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": "7.4.0"
   },
   "dependencies": {
+    "express": "^4.16.2",
     "htmlhint": "^0.9.13"
   }
 }
