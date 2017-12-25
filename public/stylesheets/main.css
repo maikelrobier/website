@@ -1,0 +1,120 @@
+body {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #666;
+}
+
+h5 > :not(:first-child) {
+  font-size: 1rem;
+}
+
+.mr-footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  color: #eee;
+  padding: 16px;
+}
+
+.mr-h7 {
+  font-size: 0.85rem;
+}
+
+.mr-card {
+  margin-top: 16px;
+  padding: 16px;
+  background-color: white;
+}
+
+.mr-card.mr-card--buttons {
+  padding-bottom: 0;
+  padding: 0;
+  background: transparent;
+}
+
+.mr-card.mr-card--buttons .mr-button {
+  margin-bottom: 16px;
+}
+
+.mr-button {
+  padding: 8px 16px;
+
+  display: flex;
+  align-items: center;
+}
+
+.mr-button > :not(:first-child) {
+  margin-left: 8px;
+}
+
+a.mr-button:hover {
+  text-decoration: none;
+}
+
+.mr-button--outline {
+  background-color: white;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.mr-button--outline:hover {
+  color: white;
+  border-color: white !important;
+}
+
+/* Brand Colors: https://brandcolors.net/ */
+
+.mr-button--outline.mr-color-facebook {
+  border-color: #3b5998;
+  color: #3b5998;
+}
+
+.mr-button--outline.mr-color-facebook:hover {
+  background-color: #3b5998;
+  color: white;
+}
+
+.mr-button--outline.mr-color-twitter {
+  border-color: #1da1f2;
+  color: #1da1f2;
+}
+
+.mr-button--outline.mr-color-twitter:hover {
+  background-color: #1da1f2;
+  color: white;
+}
+
+.mr-button--outline.mr-color-github {
+  border-color: #333;
+  color: #333;
+}
+
+.mr-button--outline.mr-color-github:hover {
+  background-color: #333;
+  color: white;
+}
+
+.mr-button--outline.mr-color-linkedin {
+  border-color: #0077b5;
+  color: #0077b5;
+}
+
+.mr-button--outline.mr-color-linkedin:hover {
+  background-color: #0077b5;
+  color: white;
+}
+
+.mr-button--outline.mr-color-stack-overflow {
+  border-color: #f48024;
+  color: #f48024;
+}
+
+.mr-button--outline.mr-color-stack-overflow:hover {
+  background-color: #f48024;
+  color: white;
+}
