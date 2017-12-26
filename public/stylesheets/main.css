@@ -12,17 +12,29 @@ h5 > :not(:first-child) {
 }
 
 .mr-footer {
-  position: absolute;
+  position: fixed;
   right: 0;
   bottom: 0;
   left: 0;
   text-align: center;
   color: #eee;
-  padding: 16px;
+  background-color: #666;
+  padding: 0 16px;
+  z-index: 9999;
+}
+
+.mr-footer__inner {
+  border-top: 1px solid #999;
+  background-color: #666;
+  padding: 8px 0;
+}
+
+.container {
+  padding-bottom: calc(1rem + 16px);
 }
 
 .mr-h7 {
-  font-size: 0.85rem;
+  font-size: 0.75rem;
 }
 
 .mr-card {
