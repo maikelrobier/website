@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <meta name="robots" content="index, follow" />
     <!-- Set character encoding for the document -->
     <meta charset="utf-8" />
     <!-- Instruct Internet Explorer to use its latest rendering engine -->
@@ -45,6 +46,40 @@
     <meta name="twitter:image" content="/public/images/picture.jpg" />
     <!-- google site verification -->
     <meta name="google-site-verification" content="d_RS7kUvd6l_nuxIN2eIsyQMEDY5VfrYuCtvhRfGGnU" />
+
+    <!-- structured data -->
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Person",
+    "familyName": "Ruiz",
+    "givenName": "Maikel",
+    "birthDate": "1994-01-02",
+    "gender": "Male",
+    "nationality": "Cuba",
+    "hasOccupation": {
+      "@type": "Occupation",
+      "name": "Software Engineer",
+      "estimatedSalary": {
+        "@type": "MonetaryAmount",
+        "minValue": "50000",
+        "maxValue": "180000",
+        "currency": "USD"
+      },
+      "occupationalCategory": "15-1132.00"
+    },
+    "worksFor": {
+      "@type": "Organization",
+      "name": "GoCo.io Inc."
+    },
+
+    "name": "Maikel Ruiz",
+    "description": "Software Engineer",
+    "image": "/public/images/picture.jpg",
+    "url": "http://maikelrobier.com"
+  }
+</script>
 
     <!-- styles -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous" />
