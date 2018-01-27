@@ -11,6 +11,15 @@ h5 > :not(:first-child) {
   font-size: 1rem;
 }
 
+.background-filter {
+  background-color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
 .mr-footer {
   position: fixed;
   right: 0;
@@ -18,7 +27,7 @@ h5 > :not(:first-child) {
   left: 0;
   text-align: center;
   color: #eee;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.5);
   z-index: 9999;
 }
 
@@ -37,7 +46,7 @@ h5 > :not(:first-child) {
 .mr-card {
   margin-top: 16px;
   padding: 16px;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.5);
   color: white;
 }
 
@@ -90,64 +99,57 @@ a.mr-button:hover {
 }
 
 .mr-button--outline {
-  background-color: white;
+  background-color: rgba(0, 0, 0, 0.5);
   border-style: solid;
-  border-width: 0;
+  border-width: 1px;
+  border-color: white;
+  color: white;
 }
 
 .mr-button--outline:hover {
   color: white;
-  border-color: white !important;
 }
 
 /* Brand Colors: https://brandcolors.net/ */
 
 .mr-button--outline.mr-color-facebook {
-  border-color: #3b5998;
-  color: #3b5998;
 }
 
 .mr-button--outline.mr-color-facebook:hover {
   background-color: #3b5998;
-  color: white;
 }
 
 .mr-button--outline.mr-color-twitter {
-  border-color: #1da1f2;
-  color: #1da1f2;
 }
 
 .mr-button--outline.mr-color-twitter:hover {
   background-color: #1da1f2;
-  color: white;
 }
 
 .mr-button--outline.mr-color-github {
-  border-color: #333;
-  color: #333;
 }
 
 .mr-button--outline.mr-color-github:hover {
   background-color: #333;
-  color: white;
 }
 
 .mr-button--outline.mr-color-linkedin {
-  border-color: #0077b5;
-  color: #0077b5;
 }
 
 .mr-button--outline.mr-color-linkedin:hover {
   background-color: #0077b5;
-  color: white;
 }
 
 .mr-button--outline.mr-color-stack-overflow {
-  border-color: #f48024;
-  color: #f48024;
 }
 
 .mr-button--outline.mr-color-stack-overflow:hover {
   background-color: #f48024;
-  color: white;
+}
+
+.mr-button--outline.mr-color-spotify {
+}
+
+.mr-button--outline.mr-color-spotify:hover {
+  background-color: #1db954;
 }
