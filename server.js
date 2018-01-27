@@ -10,7 +10,7 @@ var networkIP = _.chain(os.networkInterfaces())
   .get('address')
   .value() || '127.0.0.1'
 
-const port = process.env.PORT
+const port = process.env.PORT || 5050
 
 const app = express()
 

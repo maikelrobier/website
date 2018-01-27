@@ -18,14 +18,11 @@ h5 > :not(:first-child) {
   left: 0;
   text-align: center;
   color: #eee;
-  background-color: #666;
-  padding: 0 16px;
+  background-color: rgba(0, 0, 0, 0.6);
   z-index: 9999;
 }
 
 .mr-footer__inner {
-  border-top: 1px solid #999;
-  background-color: #666;
   padding: 8px 0;
 }
 
@@ -40,17 +37,41 @@ h5 > :not(:first-child) {
 .mr-card {
   margin-top: 16px;
   padding: 16px;
-  background-color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+}
+
+.mr-card a {
+  color: white;
+}
+
+.mr-card .media {
+  display: flex;
+  align-items: center;
 }
 
 .mr-card.mr-card--buttons {
   padding-bottom: 0;
   padding: 0;
   background: transparent;
+  margin-top: 0;
 }
 
-.mr-card.mr-card--buttons .mr-button {
-  margin-bottom: 16px;
+.mr-card--buttons .mr-button {
+  margin-top: 16px;
+}
+
+.mr-card--buttons .mr-button:not(:first-child) {
+  margin-top: 16px;
+}
+
+@media (min-width: 1281px) { /* Desktop */
+  .mr-card.mr-card--buttons {
+    margin-top: 16px;
+  }
+  .mr-card--buttons .mr-button {
+    margin-top: 0;
+  }
 }
 
 .mr-button {
@@ -71,7 +92,7 @@ a.mr-button:hover {
 .mr-button--outline {
   background-color: white;
   border-style: solid;
-  border-width: 1px;
+  border-width: 0;
 }
 
 .mr-button--outline:hover {
