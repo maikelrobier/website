@@ -7,7 +7,6 @@
   "license": "MIT",
   "scripts": {
     "dev": "webpack-dev-server",
-    "lint:html": "$(yarn bin)/htmlhint",
     "start": "node server.js",
     "heroku-postbuild": "webpack -p"
   },
@@ -16,8 +15,7 @@
   },
   "dependencies": {
     "express": "^4.16.2",
-    "htmlhint": "^0.9.13",
-    "lodash": "^4.17.4",
+    "lodash": "^4.17.11",
     "react": "^16.7.0",
     "react-dom": "^16.7.0"
   },
