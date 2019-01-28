@@ -1,5 +1,4 @@
 import * as React from 'react'
-import { hot } from "react-hot-loader"
 
 import './stylesheets/main.css'
 
@@ -7,7 +6,7 @@ import './js/bing-picture'
 
 const year = new Date().getFullYear()
 
-class App extends React.Component {
+export default class App extends React.Component {
   componentDidMount() {
     require('./js/fb-link')
   }
@@ -96,5 +95,3 @@ class App extends React.Component {
     )
   }
 }
-
-export default hot(module)(App)

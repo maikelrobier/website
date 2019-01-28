@@ -25,10 +25,4 @@
   }
 
   getBingImageUrl(setBackgroundImage)
-
-  // setBackgroundImage('https://w-dog.net/wallpapers/9/19/509090388357702/highlands-beautiful-landscape-savannah-shrubs-mountain-sand-blue-sky-clouds-landscape-widescreen.jpg')
-  // 'http://bocaratonphotographyanddesign.com/benjhicks/wp-content/gallery/landscape-western-united-states/40z3948-2utah8x10.jpg
-  // https://w-dog.net/wallpapers/9/19/509090388357702/highlands-beautiful-landscape-savannah-shrubs-mountain-sand-blue-sky-clouds-landscape-widescreen.jpg
-  // 'http://www.agropopular.com/wp-content/audios_agropopular/2017/10/agricolas.jpg'
-  // http://globalmedicalco.com/photos/globalmedicalco/22/107339.jpg
 })()
