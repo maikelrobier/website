@@ -1,11 +1,17 @@
 import * as React from 'react'
 import { render } from 'react-dom'
-import { hot } from "react-hot-loader"
+import { AppContainer } from 'react-hot-loader'
 
 import App from './App'
 
-if (process.env.NODE_ENV !== 'production') {
-  App = hot(module)(App)
-}
+const renderApp = RootComponent => render((
+  <AppContainer>
+    <RootComponent />
+  </AppContainer>
+), document.getElementById('root'))
 
-render(<App />, document.getElementById('root'))
+renderApp(App)
+
+if (module.hot) {
+  module.hot.accept('./App', () => renderApp(App))
+}
