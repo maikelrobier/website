@@ -1,9 +1,9 @@
-var os = require('os')
+const os = require('os')
 const path = require('path')
 const express = require('express')
-var _ = require('lodash')
+const _ = require('lodash')
 
-var networkIP = _.chain(os.networkInterfaces())
+const networkIP = _.chain(os.networkInterfaces())
   .values()
   .flatten()
   .find({ family: 'IPv4', internal: false })
@@ -14,12 +14,12 @@ const port = process.env.PORT || 5050
 
 const app = express()
 
-app.use(express.static(__dirname))
+app.use('/build', express.static(path.join(__dirname, 'public', 'build')))
+app.use('/images', express.static(path.join(__dirname, 'public', 'images')))
 
 app.get('*', function(request, response, next) {
-  response.sendFile(path.join(__dirname, 'index.html'));
-});
-
+  response.sendFile(path.join(__dirname, 'public', 'index.html'))
+})
 
 app.listen(port)
 

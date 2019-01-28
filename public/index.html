@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta name="robots" content="index, follow" />
+    <!-- Set character encoding for the document -->
+    <meta charset="utf-8" />
+    <!-- Instruct Internet Explorer to use its latest rendering engine -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <!-- Viewport for responsive web design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <!-- Document Title -->
+    <title>Maikel Ruiz</title>
+    <!-- Meta Description -->
+    <meta name="description" content="Maikel Ruiz's personal website" />
+    <!-- Standard favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <!-- Recommended favicon format -->
+    <!-- link rel="icon" type="image/png" href="https://example.com/favicon.png" -->
+    <!-- Apple Touch Icon (at least 200x200px) -->
+    <link rel="apple-touch-icon" href="/favicon.ico" />
+    <!-- To run web application in full-screen -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <!-- Status Bar Style (see Supported Meta Tags below for available values) -->
+    <!-- Has no effect unless you have the previous meta tag -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+    <!-- Facebook OG -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://maikelrobier.com" />
+    <meta property="og:title" content="Maikel Ruiz's Website" />
+    <meta property="og:image" content="/public/images/picture.jpg" />
+    <meta property="og:description" content="Software Engineer in Houston, Texas." />
+    <!--meta property="og:site_name" content="Site Name" -->
+    <meta property="og:locale" content="en_US" />
+    <!-- Next tags are optional but recommended -->
+    <meta property="og:image:width" content="128" />
+    <meta property="og:image:height" content="128" />
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="Software Engineer in Houston, Texas." />
+    <meta name="twitter:site" content="@maikelrobier" />
+    <meta name="twitter:creator" content="@maikelrobier" />
+    <meta name="twitter:url" content="http://maikelrobier.com" />
+    <meta name="twitter:title" content="Maikel Ruiz's Website" />
+    <!--meta name="twitter:description" content="Content description less than 200 characters" -->
+    <meta name="twitter:image" content="/public/images/picture.jpg" />
+    <!-- google site verification -->
+    <meta name="google-site-verification" content="d_RS7kUvd6l_nuxIN2eIsyQMEDY5VfrYuCtvhRfGGnU" />
+    <!-- structured data -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "Person",
+        "familyName": "Ruiz",
+        "givenName": "Maikel",
+        "birthDate": "1994-01-02",
+        "gender": "Male",
+        "nationality": "Cuba",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "GoCo.io Inc."
+        },
+
+        "name": "Maikel Ruiz",
+        "description": "Software Engineer",
+        "image": "/public/images/picture.jpg",
+        "url": "http://maikelrobier.com"
+      }
+    </script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <script src="https://use.fontawesome.com/0c5c2733bf.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111634544-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-111634544-1');
+    </script>
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '2005313443085339',
+          xfbml      : true,
+          version    : 'v2.11'
+        });
+        FB.AppEvents.logPageView();
+      };
+      (function(d, s, id){
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) {return;}
+          js = d.createElement(s); js.id = id;
+          js.src = "https://connect.facebook.net/en_US/sdk.js";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <script src="/build/bundle.js"></script>
+  </body>
+</html>
+
